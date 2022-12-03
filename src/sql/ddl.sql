@@ -1,4 +1,4 @@
-CREATE database jpastrat CHARACTER SET utf8;
+CREATE database jpastart CHARACTER SET utf8;
 
 CREATE USER 'jpauser'@'localhost' IDENTIFIED BY 'jpapass';
 CREATE USER 'jpauser'@'%' IDENTIFIED BY 'jpapass';
@@ -11,4 +11,4 @@ CREATE TABLE jpastart.user
     email       VARCHAR(50) NOT NULL PRIMARY KEY,
     name        VARCHAR(50),
     create_date DATETIME
-) ENGINE innodb CHARATER SET utf8;
+) ENGINE innodb CHARACTER SET utf8;

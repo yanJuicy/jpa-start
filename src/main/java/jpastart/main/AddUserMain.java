@@ -12,7 +12,6 @@ import jpastart.reserve.model.User;
 public class AddUserMain {
 
 	public static void main(String[] args) {
-		System.out.println("시작");
 		EntityManagerFactory emf =
 			Persistence.createEntityManagerFactory("jpastart");
 
