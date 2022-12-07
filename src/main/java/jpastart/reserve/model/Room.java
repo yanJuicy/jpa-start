@@ -50,4 +50,8 @@ public class Room {
     public LocalDateTime getCreateTime() {
         return createTime;
     }
+
+    public void changeName(String newName) {
+        this.name = newName;
+    }
 }

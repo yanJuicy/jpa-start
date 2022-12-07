@@ -9,15 +9,21 @@
     <!--  EntityManagerFactory 생성 시 사용되는 persistence name -->
     <persistence-unit name="jpastart" transaction-type="RESOURCE_LOCAL">
         <class>jpastart.reserve.model.User</class>
+        <class>jpastart.reserve.model.Room</class>
+        <class>jpastart.reserve.model.Hotel</class>
+        <class>jpastart.reserve.model.Review</class>
+        <class>jpastart.guide.model.City</class>
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
 
         <properties>
             <!-- 필수 속성 -->
-            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.driver"
+                      value="com.mysql.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.url"
                       value="jdbc:mysql://localhost/jpastart?characterEncoding=UTF-8&amp;useSSL=false"/>
-            <property name="javax.persistence.jdbc.user" value="jpauser"/>
+            <property name="javax.persistence.jdbc.user"
+                      value="jpauser"/>
             <property name="javax.persistence.jdbc.password"
                       value="jpapass"/>
 
