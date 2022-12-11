@@ -12,7 +12,9 @@
         <class>jpastart.reserve.model.Room</class>
         <class>jpastart.reserve.model.Hotel</class>
         <class>jpastart.reserve.model.Review</class>
+        <class>jpastart.reserve.model.MonthCharge</class>
         <class>jpastart.guide.model.City</class>
+        <class>jpastart.guide.model.Sight</class>
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
 
@@ -35,7 +37,7 @@
             <!-- 가독성 높여주는 formatting 여부 -->
             <property name="hibernate.format_sql" value="true"/>
             <!-- Comment 확인 여부 -->
-            <property name="hibernate.use_sql_comments" value="true"/>
+<!--            <property name="hibernate.use_sql_comments" value="true"/>-->
 
             <property name="hibernate.c3p0.min_size" value="5"/>
             <property name="hibernate.c3p0.max_size" value="20"/>
